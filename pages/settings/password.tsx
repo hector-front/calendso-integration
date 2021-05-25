@@ -58,19 +58,19 @@ export default function Settings(props) {
                             <div className="w-1/2 mr-2">
                                 <label htmlFor="current_password" className="block text-sm font-medium text-gray-700">Current Password</label>
                                 <div className="mt-1">
-                                    <input ref={oldPasswordRef} type="password" name="current_password" id="current_password" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Your old password" />
+                                    <input ref={oldPasswordRef} type="password" name="current_password" id="current_password" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Your old password" />
                                 </div>
                             </div>
                             <div className="w-1/2 ml-2">
                                 <label htmlFor="new_password" className="block text-sm font-medium text-gray-700">New Password</label>
                                 <div className="mt-1">
-                                    <input ref={newPasswordRef} type="password" name="new_password" id="new_password" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Your super secure new password" />
+                                    <input ref={newPasswordRef} type="password" name="new_password" id="new_password" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Your super secure new password" />
                                 </div>
                             </div>
                         </div>
                         <hr className="mt-8" />
                         <div className="py-4 flex justify-end">
-                            <button type="submit" className="ml-2 bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            <button type="submit" className="ml-2 bg-green-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                                 Save
                             </button>
                         </div>

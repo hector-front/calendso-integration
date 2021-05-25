@@ -79,12 +79,12 @@ export default function Settings(props) {
                                             <span className="bg-gray-50 border border-r-0 border-gray-300 rounded-l-md px-3 inline-flex items-center text-gray-500 sm:text-sm">
                                                 {window.location.hostname}/
                                             </span>
-                                            <input ref={usernameRef} type="text" name="username" id="username" autoComplete="username" required className="focus:ring-blue-500 focus:border-blue-500 flex-grow block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" defaultValue={props.user.username} />
+                                            <input ref={usernameRef} type="text" name="username" id="username" autoComplete="username" required className="focus:ring-green-500 focus:border-green-500 flex-grow block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300" defaultValue={props.user.username} />
                                         </div>
                                     </div>
                                     <div className="w-1/2 ml-2">
                                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Full name</label>
-                                        <input ref={nameRef} type="text" name="name" id="name" autoComplete="given-name" placeholder="Your name" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" defaultValue={props.user.name} />
+                                        <input ref={nameRef} type="text" name="name" id="name" autoComplete="given-name" placeholder="Your name" required className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" defaultValue={props.user.name} />
                                     </div>
                                 </div>
 
@@ -93,7 +93,7 @@ export default function Settings(props) {
                                         About
                                     </label>
                                     <div className="mt-1">
-                                        <textarea ref={descriptionRef} id="about" name="about" placeholder="A little something about yourself." rows={3} className="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md">{props.user.bio}</textarea>
+                                        <textarea ref={descriptionRef} id="about" name="about" placeholder="A little something about yourself." rows={3} className="shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md">{props.user.bio}</textarea>
                                     </div>
                                 </div>
                                 <div>
@@ -101,7 +101,7 @@ export default function Settings(props) {
                                         Timezone
                                     </label>
                                     <div className="mt-1">
-                                        <TimezoneSelect id="timeZone" value={selectedTimeZone} onChange={setSelectedTimeZone} className="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" />
+                                        <TimezoneSelect id="timeZone" value={selectedTimeZone} onChange={setSelectedTimeZone} className="shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" />
                                     </div>
                                 </div>
                                 <div>
@@ -109,7 +109,7 @@ export default function Settings(props) {
                                         First Day of Week
                                     </label>
                                     <div className="mt-1">
-                                        <select id="weekStart" value={selectedWeekStartDay} onChange={e => setSelectedWeekStartDay(e.target.value)} className="shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md">
+                                        <select id="weekStart" value={selectedWeekStartDay} onChange={e => setSelectedWeekStartDay(e.target.value)} className="shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md">
                                             <option value="Sunday">Sunday</option>
                                             <option value="Monday">Monday</option>
                                         </select>
@@ -127,7 +127,7 @@ export default function Settings(props) {
                                             <Avatar user={props.user} className="rounded-full h-full w-full" />
                                         </div>
                                         {/* <div className="ml-5 rounded-md shadow-sm">
-                                            <div className="group relative border border-gray-300 rounded-md py-2 px-3 flex items-center justify-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500">
+                                            <div className="group relative border border-gray-300 rounded-md py-2 px-3 flex items-center justify-center hover:bg-gray-50 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-green-500">
                                                 <label htmlFor="user_photo" className="relative text-sm leading-4 font-medium text-gray-700 pointer-events-none">
                                                     <span>Change</span>
                                                     <span className="sr-only"> user photo</span>
@@ -142,7 +142,7 @@ export default function Settings(props) {
                                     <Avatar
                                         user={props.user}
                                         className="relative rounded-full w-40 h-40"
-                                        fallback={<div className="relative bg-blue-600 rounded-full w-40 h-40"></div>}
+                                        fallback={<div className="relative bg-green-600 rounded-full w-40 h-40"></div>}
                                     />
                                     {/* <label htmlFor="user-photo" className="absolute inset-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center text-sm font-medium text-white opacity-0 hover:opacity-100 focus-within:opacity-100">
                                         <span>Change</span>
@@ -152,13 +152,13 @@ export default function Settings(props) {
                                 </div>
                                 <div className="mt-4">
                                     <label htmlFor="avatar" className="block text-sm font-medium text-gray-700">Avatar URL</label>
-                                    <input ref={avatarRef} type="text" name="avatar" id="avatar" placeholder="URL" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" defaultValue={props.user.avatar} />
+                                    <input ref={avatarRef} type="text" name="avatar" id="avatar" placeholder="URL" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm" defaultValue={props.user.avatar} />
                                 </div>
                             </div>
                         </div>
                         <hr className="mt-8" />
                         <div className="py-4 flex justify-end">
-                            <button type="submit" className="ml-2 bg-blue-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                            <button type="submit" className="ml-2 bg-green-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
                                 Save
                             </button>
                         </div>

@@ -154,8 +154,8 @@ export default function Availability(props) {
                                                     {eventType.length} minutes
                                                 </td>
                                                 <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                                    <Link href={"/" + props.user.username + "/" + eventType.slug}><a target="_blank" className="text-blue-600 hover:text-blue-900 mr-2">View</a></Link>
-                                                    <Link href={"/availability/event/" + eventType.id}><a className="text-blue-600 hover:text-blue-900">Edit</a></Link>
+                                                    <Link href={"/" + props.user.username + "/" + eventType.slug}><a target="_blank" className="text-green-600 hover:text-green-900 mr-2">View</a></Link>
+                                                    <Link href={"/availability/event/" + eventType.id}><a className="text-green-600 hover:text-green-900">Edit</a></Link>
                                                 </td>
                                             </tr>
                                         )}
@@ -191,8 +191,8 @@ export default function Availability(props) {
 
                             <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
                                 <div className="sm:flex sm:items-start mb-4">
-                                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
-                                        <PlusIcon className="h-6 w-6 text-blue-600" />
+                                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                                        <PlusIcon className="h-6 w-6 text-green-600" />
                                     </div>
                                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                         <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">
@@ -210,7 +210,7 @@ export default function Availability(props) {
                                         <div className="mb-4">
                                             <label htmlFor="title" className="block text-sm font-medium text-gray-700">Title</label>
                                             <div className="mt-1">
-                                                <input ref={titleRef} type="text" name="title" id="title" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Quick Chat" />
+                                                <input ref={titleRef} type="text" name="title" id="title" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Quick Chat" />
                                             </div>
                                         </div>
                                         <div className="mb-4">
@@ -226,7 +226,7 @@ export default function Availability(props) {
                                                         name="slug"
                                                         id="slug"
                                                         required
-                                                        className="flex-1 block w-full focus:ring-blue-500 focus:border-blue-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                        className="flex-1 block w-full focus:ring-green-500 focus:border-green-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                                                     />
                                                 </div>
                                             </div>
@@ -234,13 +234,13 @@ export default function Availability(props) {
                                         <div className="mb-4">
                                             <label htmlFor="description" className="block text-sm font-medium text-gray-700">Description</label>
                                             <div className="mt-1">
-                                                <textarea ref={descriptionRef} name="description" id="description" className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="A quick video meeting."></textarea>
+                                                <textarea ref={descriptionRef} name="description" id="description" className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="A quick video meeting."></textarea>
                                             </div>
                                         </div>
                                         <div className="mb-4">
                                             <label htmlFor="length" className="block text-sm font-medium text-gray-700">Length</label>
                                             <div className="mt-1 relative rounded-md shadow-sm">
-                                                <input ref={lengthRef} type="number" name="length" id="length" required className="focus:ring-blue-500 focus:border-blue-500 block w-full pr-20 sm:text-sm border-gray-300 rounded-md" placeholder="15" />
+                                                <input ref={lengthRef} type="number" name="length" id="length" required className="focus:ring-green-500 focus:border-green-500 block w-full pr-20 sm:text-sm border-gray-300 rounded-md" placeholder="15" />
                                                 <div className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 text-sm">
                                                     minutes
                                                 </div>
@@ -255,7 +255,7 @@ export default function Availability(props) {
                                                     id="ishidden"
                                                     name="ishidden"
                                                     type="checkbox"
-                                                    className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                                                    className="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded"
                                                 />
                                             </div>
                                             <div className="ml-3 text-sm">
@@ -289,8 +289,8 @@ export default function Availability(props) {
 
                             <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
                                 <div className="sm:flex sm:items-start mb-4">
-                                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
-                                        <ClockIcon className="h-6 w-6 text-blue-600" />
+                                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                                        <ClockIcon className="h-6 w-6 text-green-600" />
                                     </div>
                                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                         <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">
@@ -308,24 +308,24 @@ export default function Availability(props) {
                                         <label className="w-1/4 pt-2 block text-sm font-medium text-gray-700">Start time</label>
                                         <div>
                                             <label htmlFor="hours" className="sr-only">Hours</label>
-                                            <input ref={startHoursRef} type="number" name="hours" id="hours" className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="9" defaultValue={convertMinsToHrsMins(props.user.startTime).split(":")[0]} />
+                                            <input ref={startHoursRef} type="number" name="hours" id="hours" className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="9" defaultValue={convertMinsToHrsMins(props.user.startTime).split(":")[0]} />
                                         </div>
                                         <span className="mx-2 pt-1">:</span>
                                         <div>
                                             <label htmlFor="minutes" className="sr-only">Minutes</label>
-                                            <input ref={startMinsRef} type="number" name="minutes" id="minutes" className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="30" defaultValue={convertMinsToHrsMins(props.user.startTime).split(":")[1]} />
+                                            <input ref={startMinsRef} type="number" name="minutes" id="minutes" className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="30" defaultValue={convertMinsToHrsMins(props.user.startTime).split(":")[1]} />
                                         </div>
                                     </div>
                                     <div className="flex">
                                         <label className="w-1/4 pt-2 block text-sm font-medium text-gray-700">End time</label>
                                         <div>
                                             <label htmlFor="hours" className="sr-only">Hours</label>
-                                            <input ref={endHoursRef} type="number" name="hours" id="hours" className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="17" defaultValue={convertMinsToHrsMins(props.user.endTime).split(":")[0]} />
+                                            <input ref={endHoursRef} type="number" name="hours" id="hours" className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="17" defaultValue={convertMinsToHrsMins(props.user.endTime).split(":")[0]} />
                                         </div>
                                         <span className="mx-2 pt-1">:</span>
                                         <div>
                                             <label htmlFor="minutes" className="sr-only">Minutes</label>
-                                            <input ref={endMinsRef} type="number" name="minutes" id="minutes" className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="30" defaultValue={convertMinsToHrsMins(props.user.endTime).split(":")[1]} />
+                                            <input ref={endMinsRef} type="number" name="minutes" id="minutes" className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="30" defaultValue={convertMinsToHrsMins(props.user.endTime).split(":")[1]} />
                                         </div>
                                     </div>
                                     <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">

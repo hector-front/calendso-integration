@@ -90,7 +90,7 @@ export default function Book(props) {
                                 <LocationMarkerIcon className="inline-block w-4 h-4 mr-1 -mt-1" />
                                 {locationInfo(selectedLocation).address}
                             </p>}
-                            <p className="text-blue-600 mb-4">
+                            <p className="text-green-600 mb-4">
                                 <CalendarIcon className="inline-block w-4 h-4 mr-1 -mt-1" />
                                 {dayjs(date).format("hh:mma, dddd DD MMMM YYYY")}
                             </p>
@@ -101,13 +101,13 @@ export default function Book(props) {
                                 <div className="mb-4">
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">Your name</label>
                                     <div className="mt-1">
-                                        <input type="text" name="name" id="name" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="John Doe" />
+                                        <input type="text" name="name" id="name" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="John Doe" />
                                     </div>
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email address</label>
                                     <div className="mt-1">
-                                        <input type="email" name="email" id="email" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="you@example.com" />
+                                        <input type="email" name="email" id="email" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="you@example.com" />
                                     </div>
                                 </div>
                                 {locations.length > 1 && (
@@ -124,12 +124,12 @@ export default function Book(props) {
                                 {selectedLocation === LocationType.Phone && (<div className="mb-4">
                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
                                    <div className="mt-1">
-                                       <PhoneInput name="phone" placeholder="Enter phone number" id="phone" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" onChange={() => {}} />
+                                       <PhoneInput name="phone" placeholder="Enter phone number" id="phone" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" onChange={() => {}} />
                                    </div>
                                 </div>)}
                                 <div className="mb-4">
                                     <label htmlFor="notes" className="block text-sm font-medium text-gray-700 mb-1">Additional notes</label>
-                                    <textarea name="notes" id="notes" rows={3}  className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Please share anything that will help prepare for our meeting."></textarea>
+                                    <textarea name="notes" id="notes" rows={3}  className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Please share anything that will help prepare for our meeting."></textarea>
                                 </div>
                                 <div>
                                     <button type="submit" className="btn btn-primary">Confirm</button>

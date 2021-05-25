@@ -91,7 +91,7 @@ export default function EventType(props) {
                     <div>
                         <label htmlFor="address" className="block text-sm font-medium text-gray-700">Set an address or place</label>
                         <div className="mt-1">
-                            <input type="text" name="address" id="address" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" defaultValue={address} />
+                            <input type="text" name="address" id="address" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" defaultValue={address} />
                         </div>
                     </div>
                 )
@@ -143,7 +143,7 @@ export default function EventType(props) {
                                     <div className="mb-4">
                                         <label htmlFor="title" className="block text-sm font-medium text-gray-700">Title</label>
                                         <div className="mt-1">
-                                            <input ref={titleRef} type="text" name="title" id="title" required className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Quick Chat" defaultValue={props.eventType.title} />
+                                            <input ref={titleRef} type="text" name="title" id="title" required className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Quick Chat" defaultValue={props.eventType.title} />
                                         </div>
                                     </div>
                                     <div className="mb-4">
@@ -159,7 +159,7 @@ export default function EventType(props) {
                                                     name="slug"
                                                     id="slug"
                                                     required
-                                                    className="flex-1 block w-full focus:ring-blue-500 focus:border-blue-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    className="flex-1 block w-full focus:ring-green-500 focus:border-green-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                                                     defaultValue={props.eventType.slug}
                                                 />
                                             </div>
@@ -174,14 +174,14 @@ export default function EventType(props) {
                                                     id="location"
                                                     options={locationOptions}
                                                     isSearchable="false"
-                                                    className="flex-1 block w-full focus:ring-blue-500 focus:border-blue-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    className="flex-1 block w-full focus:ring-green-500 focus:border-green-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                                                     onChange={(e) => openLocationModal(e.value)}
                                                 />
                                             </div>
                                         </div>}
                                         {locations.length > 0 && <ul className="w-96 mt-1">
                                             {locations.map( (location) => (
-                                                <li key={location.type} className="bg-blue-50 mb-2 p-2 border">
+                                                <li key={location.type} className="bg-green-50 mb-2 p-2 border">
                                                     <div className="flex justify-between">
                                                         {location.type === LocationType.InPerson && (
                                                             <div className="flex-grow flex">
@@ -196,7 +196,7 @@ export default function EventType(props) {
                                                             </div>
                                                         )}
                                                         <div className="flex">
-                                                            <button type="button" onClick={() => openLocationModal(location.type)} className="mr-2 text-sm text-blue-600">Edit</button>
+                                                            <button type="button" onClick={() => openLocationModal(location.type)} className="mr-2 text-sm text-green-600">Edit</button>
                                                             <button onClick={() => removeLocation(location)}>
                                                                 <XIcon className="h-6 w-6 border-l-2 pl-1 hover:text-red-500 " />
                                                             </button>
@@ -205,7 +205,7 @@ export default function EventType(props) {
                                                 </li>
                                             ))}
                                             {locations.length > 0 && locations.length !== locationOptions.length && <li>
-                                                <button type="button" className="sm:flex sm:items-start text-sm text-blue-600" onClick={() => setShowLocationModal(true)}>
+                                                <button type="button" className="sm:flex sm:items-start text-sm text-green-600" onClick={() => setShowLocationModal(true)}>
                                                     <PlusCircleIcon className="h-6 w-6" />
                                                     <span className="ml-1">Add another location option</span>
                                                 </button>
@@ -215,13 +215,13 @@ export default function EventType(props) {
                                     <div className="mb-4">
                                         <label htmlFor="description" className="block text-sm font-medium text-gray-700">Description</label>
                                         <div className="mt-1">
-                                            <textarea ref={descriptionRef} name="description" id="description" className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="A quick video meeting." defaultValue={props.eventType.description}></textarea>
+                                            <textarea ref={descriptionRef} name="description" id="description" className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="A quick video meeting." defaultValue={props.eventType.description}></textarea>
                                         </div>
                                     </div>
                                     <div className="mb-4">
                                         <label htmlFor="length" className="block text-sm font-medium text-gray-700">Length</label>
                                         <div className="mt-1 relative rounded-md shadow-sm">
-                                            <input ref={lengthRef} type="number" name="length" id="length" required className="focus:ring-blue-500 focus:border-blue-500 block w-full pr-20 sm:text-sm border-gray-300 rounded-md" placeholder="15" defaultValue={props.eventType.length} />
+                                            <input ref={lengthRef} type="number" name="length" id="length" required className="focus:ring-green-500 focus:border-green-500 block w-full pr-20 sm:text-sm border-gray-300 rounded-md" placeholder="15" defaultValue={props.eventType.length} />
                                             <div className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 text-sm">
                                                 minutes
                                             </div>
@@ -235,7 +235,7 @@ export default function EventType(props) {
                                                     id="ishidden"
                                                     name="ishidden"
                                                     type="checkbox"
-                                                    className="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded"
+                                                    className="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded"
                                                     defaultChecked={props.eventType.hidden}
                                                 />
                                             </div>
@@ -282,8 +282,8 @@ export default function EventType(props) {
 
                             <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
                                 <div className="sm:flex sm:items-start mb-4">
-                                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
-                                        <LocationMarkerIcon className="h-6 w-6 text-blue-600" />
+                                    <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                                        <LocationMarkerIcon className="h-6 w-6 text-green-600" />
                                     </div>
                                     <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                         <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">Edit location</h3>
@@ -295,7 +295,7 @@ export default function EventType(props) {
                                         defaultValue={selectedLocation}
                                         options={locationOptions}
                                         isSearchable="false"
-                                        className="mb-2 flex-1 block w-full focus:ring-blue-500 focus:border-blue-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                        className="mb-2 flex-1 block w-full focus:ring-green-500 focus:border-green-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300"
                                         onChange={setSelectedLocation}
                                     />
                                     <LocationOptions />

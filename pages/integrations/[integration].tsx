@@ -78,9 +78,9 @@ export default function integration(props) {
                                             <span>&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</span>
                                             :
                                             <div>
-                                                <textarea name="apikey" rows={6} className="shadow-sm focus:ring-blue-500 focus:border-blue-500 block w-full sm:text-sm border-gray-300 rounded-md" readOnly>{JSON.stringify(props.integration.key)}</textarea>
+                                                <textarea name="apikey" rows={6} className="shadow-sm focus:ring-green-500 focus:border-green-500 block w-full sm:text-sm border-gray-300 rounded-md" readOnly>{JSON.stringify(props.integration.key)}</textarea>
                                             </div>}
-                                        <button onClick={toggleShowAPIKey} className="ml-2 font-medium text-blue-600 hover:text-blue-700">{!showAPIKey ? 'Show' : 'Hide'}</button>
+                                        <button onClick={toggleShowAPIKey} className="ml-2 font-medium text-green-600 hover:text-green-700">{!showAPIKey ? 'Show' : 'Hide'}</button>
                                     </dd>
                                 </div>
                             </dl>

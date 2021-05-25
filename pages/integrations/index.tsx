@@ -45,7 +45,7 @@ export default function Home({ integrations }) {
                                             </div>
                                             <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                                                 <div>
-                                                    <p className="text-sm font-medium text-blue-600 truncate">{ig.title}</p>
+                                                    <p className="text-sm font-medium text-green-600 truncate">{ig.title}</p>
                                                     <p className="flex items-center text-sm text-gray-500">
                                                         {ig.type.endsWith('_calendar') && <span className="truncate">Calendar Integration</span>}
                                                     </p>
@@ -74,7 +74,7 @@ export default function Home({ integrations }) {
                     <div className="bg-white shadow sm:rounded-lg">
                         <div className="flex">
                             <div className="py-9 pl-8">
-                                <InformationCircleIcon className="text-blue-600 w-16" />
+                                <InformationCircleIcon className="text-green-600 w-16" />
                             </div>
                             <div className="py-5 sm:p-6">
                                 <h3 className="text-lg leading-6 font-medium text-gray-900">
@@ -86,7 +86,7 @@ export default function Home({ integrations }) {
                                     </p>
                                 </div>
                                 <div className="mt-3 text-sm">
-                                    <button onClick={toggleAddModal} className="font-medium text-blue-600 hover:text-blue-500"> Add your first integration <span aria-hidden="true">&rarr;</span></button>
+                                    <button onClick={toggleAddModal} className="font-medium text-green-600 hover:text-green-500"> Add your first integration <span aria-hidden="true">&rarr;</span></button>
                                 </div>
                             </div>
                         </div>
@@ -120,8 +120,8 @@ export default function Home({ integrations }) {
                         --> */}
                         <div className="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
                             <div className="sm:flex sm:items-start">
-                                <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 sm:mx-0 sm:h-10 sm:w-10">
-                                    <PlusIcon className="h-6 w-6 text-blue-600" />
+                                <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
+                                    <PlusIcon className="h-6 w-6 text-green-600" />
                                 </div>
                                 <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                     <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">
@@ -145,7 +145,7 @@ export default function Home({ integrations }) {
                                             <p className="text-gray-400 text-sm">{ integration.description }</p>
                                         </div>
                                         <div className="w-2/12 text-right pt-2">
-                                            <button onClick={() => integrationHandler(integration.type)} className="font-medium text-blue-600 hover:text-blue-500">Add</button>
+                                            <button onClick={() => integrationHandler(integration.type)} className="font-medium text-green-600 hover:text-green-500">Add</button>
                                         </div>
                                     </li>))}
                                 </ul>

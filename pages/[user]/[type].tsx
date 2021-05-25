@@ -103,7 +103,7 @@ export default function Type(props) {
         <button key={day} onClick={(e) => {
             telemetry.withJitsu((jitsu) => jitsu.track(telemetryEventTypes.dateSelected, collectPageParameters()))
             setSelectedDate(dayjs().tz(selectedTimeZone).month(selectedMonth).date(day))
-        }} disabled={selectedMonth < parseInt(dayjs().format('MM')) && dayjs().month(selectedMonth).format("D") > day} className={"text-center w-10 h-10 rounded-full mx-auto " + (dayjs().isSameOrBefore(dayjs().date(day).month(selectedMonth)) ? 'bg-blue-50 text-blue-600 font-medium' : 'text-gray-400 font-light') + (dayjs(selectedDate).month(selectedMonth).format("D") == day ? ' bg-blue-600 text-white-important' : '')}>
+        }} disabled={selectedMonth < parseInt(dayjs().format('MM')) && dayjs().month(selectedMonth).format("D") > day} className={"text-center w-10 h-10 rounded-full mx-auto " + (dayjs().isSameOrBefore(dayjs().date(day).month(selectedMonth)) ? 'bg-green-50 text-green-600 font-medium' : 'text-gray-400 font-light') + (dayjs(selectedDate).month(selectedMonth).format("D") == day ? ' bg-green-600 text-white-important' : '')}>
             {day}
         </button>
     )];
@@ -167,7 +167,7 @@ export default function Type(props) {
     const availableTimes = times.map((time) =>
         <div key={dayjs(time).utc().format()}>
             <Link href={`/${props.user.username}/book?date=${dayjs(time).utc().format()}&type=${props.eventType.id}`}>
-                <a key={dayjs(time).format("hh:mma")} className="block font-medium mb-4 text-blue-600 border border-blue-600 rounded hover:text-white hover:bg-blue-600 py-4">{dayjs(time).tz(selectedTimeZone).format(is24h ? "HH:mm" : "hh:mma")}</a>
+                <a key={dayjs(time).format("hh:mma")} className="block font-medium mb-4 text-green-600 border border-green-600 rounded hover:text-white hover:bg-green-600 py-4">{dayjs(time).tz(selectedTimeZone).format(is24h ? "HH:mm" : "hh:mma")}</a>
             </Link>
         </div>
     );
@@ -227,8 +227,8 @@ export default function Type(props) {
                             checked={is24h}
                             onChange={setIs24h}
                             className={classNames(
-                              is24h ? "bg-blue-600" : "bg-gray-200",
-                              "relative inline-flex flex-shrink-0 h-5 w-8 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                              is24h ? "bg-green-600" : "bg-gray-200",
+                              "relative inline-flex flex-shrink-0 h-5 w-8 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                             )}
                           >
                             <span className="sr-only">Use setting</span>
@@ -250,7 +250,7 @@ export default function Type(props) {
                       id="timeZone"
                       value={selectedTimeZone}
                       onChange={({ value }) => setSelectedTimeZone(value)}
-                      className="mb-2 shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
+                      className="mb-2 shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
                     />
                   </div>
                 )}

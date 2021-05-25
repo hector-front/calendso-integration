@@ -83,7 +83,7 @@ export default function Home(props) {
                                     <div key={item.name} className="px-4 py-5 sm:p-6">
                                         <dt className="text-base font-normal text-gray-900">{item.name}</dt>
                                         <dd className="mt-1 flex justify-between items-baseline md:block lg:flex">
-                                            <div className="flex items-baseline text-2xl font-semibold text-blue-600">
+                                            <div className="flex items-baseline text-2xl font-semibold text-green-600">
                                                 {item.stat}
                                             </div>
                                         </dd>
@@ -104,7 +104,7 @@ export default function Home(props) {
                                             <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                                                 <div className="truncate">
                                                     <div className="flex text-sm">
-                                                        <p className="font-medium text-blue-600 truncate">{type.title}</p>
+                                                        <p className="font-medium text-green-600 truncate">{type.title}</p>
                                                         <p className="ml-1 flex-shrink-0 font-normal text-gray-500">in {type.description}</p>
                                                     </div>
                                                     <div className="mt-2 flex">
@@ -118,7 +118,7 @@ export default function Home(props) {
                                                 </div>
                                             </div>
                                             <div className="ml-5 flex-shrink-0">
-                                                <Link href={"/" + session.user.username + "/" + type.slug}><a target="_blank" className="text-blue-600 hover:text-blue-900 mr-2 font-medium">View</a></Link>
+                                                <Link href={"/" + session.user.username + "/" + type.slug}><a target="_blank" className="text-green-600 hover:text-green-900 mr-2 font-medium">View</a></Link>
                                             </div>
                                         </div>
                                     </li>
@@ -186,7 +186,7 @@ export default function Home(props) {
                                 </div>
                             </div>
                             <div>
-                                <p className="text-2xl font-semibold text-gray-600">Offering time slots between <span className="text-blue-600">{convertMinsToHrsMins(props.user.startTime)}</span> and <span className="text-blue-600">{convertMinsToHrsMins(props.user.endTime)}</span></p>
+                                <p className="text-2xl font-semibold text-gray-600">Offering time slots between <span className="text-green-600">{convertMinsToHrsMins(props.user.startTime)}</span> and <span className="text-green-600">{convertMinsToHrsMins(props.user.endTime)}</span></p>
                             </div>
                         </div>
                         <div className="mt-8 bg-white rounded-lg shadow px-5 py-6 md:py-7 sm:px-6">

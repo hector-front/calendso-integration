@@ -9,11 +9,11 @@ return null;
     <>
       <div className="h-12" />
       <div className="fixed inset-x-0 bottom-0">
-        <div className="bg-blue-600">
+        <div className="bg-green-600">
           <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between flex-wrap">
               <div className="w-0 flex-1 flex items-center">
-                <span className="flex p-2 rounded-lg bg-blue-600">
+                <span className="flex p-2 rounded-lg bg-green-600">
                   <GiftIcon className="h-6 w-6 text-white" aria-hidden="true" />
                 </span>
                 <p className="ml-3 font-medium text-white truncate">
@@ -30,7 +30,7 @@ return null;
                 <a
                   target="_blank"
                   href="https://calendso.com/donate"
-                  className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-blue-600 bg-white hover:bg-blue-50"
+                  className="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-green-600 bg-white hover:bg-green-50"
                 >
                   Donate
                 </a>
